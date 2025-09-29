@@ -1,0 +1,119 @@
+.question-display {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.question-display::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #10b981, #f59e0b);
+}
+
+.question-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+
+.difficulty-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 24px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.question-content {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 0;
+}
+
+.question-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);
+  position: relative;
+}
+
+.question-icon::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 22px;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(8px);
+}
+
+.question-text h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.question-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #374151;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+
+@media (max-width: 768px) {
+  .question-display {
+    padding: 20px;
+  }
+  
+  .question-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .question-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .question-text h3 {
+    font-size: 16px;
+  }
+  
+  .question-text p {
+    font-size: 14px;
+  }
+}
