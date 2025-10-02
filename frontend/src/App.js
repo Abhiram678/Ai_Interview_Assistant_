@@ -21,7 +21,8 @@ function App() {
 
   const checkUnfinishedInterview = async () => {
     try {
-      const response = await fetch('/api/check-unfinished-interview');
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${API_URL}/api/check-unfinished-interview`);
       const data = await response.json();
       
       if (data.has_unfinished) {

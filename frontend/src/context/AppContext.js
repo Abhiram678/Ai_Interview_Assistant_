@@ -65,7 +65,8 @@ export const AppProvider = ({ children }) => {
 
   // Initialize socket connection
   useEffect(() => {
-    const newSocket = io('http://localhost:5000');
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    const newSocket = io(API_URL);
     setSocket(newSocket);
 
     newSocket.on('connect', () => {
@@ -104,7 +105,8 @@ export const AppProvider = ({ children }) => {
   const fetchCandidates = async () => {
     try {
       setLoading(true);
-      const response = await fetch('/api/candidates');
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${API_URL}/api/candidates`);
       const data = await response.json();
       
       if (data.success) {
@@ -122,7 +124,8 @@ export const AppProvider = ({ children }) => {
   const startInterview = async (candidateData) => {
     try {
       setLoading(true);
-      const response = await fetch('/api/start-interview', {
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${API_URL}/api/start-interview`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -151,7 +154,8 @@ export const AppProvider = ({ children }) => {
   const submitAnswer = async (questionId, answer, timeTaken) => {
     try {
       setLoading(true);
-      const response = await fetch('/api/submit-answer', {
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${API_URL}/api/submit-answer`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -190,7 +194,8 @@ export const AppProvider = ({ children }) => {
   const resumeInterview = async (interviewId) => {
     try {
       setLoading(true);
-      const response = await fetch('/api/resume-interview', {
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${API_URL}/api/resume-interview`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -219,7 +224,8 @@ export const AppProvider = ({ children }) => {
   const getCandidateDetails = async (candidateId) => {
     try {
       setLoading(true);
-      const response = await fetch(`/api/candidate/${candidateId}`);
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${API_URL}/api/candidate/${candidateId}`);
       const data = await response.json();
       
       if (data.success) {
