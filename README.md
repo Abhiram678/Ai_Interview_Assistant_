@@ -1,212 +1,230 @@
-# AI-Powered Interview Assistant
+# 🧠 InterviewAI - AI-Powered Interview Assistant
 
-A comprehensive React application with Python Flask backend that provides an AI-powered interview experience for candidates and a dashboard for interviewers.
+<div align="center">
 
-## Features
+![InterviewAI Logo](https://img.shields.io/badge/InterviewAI-AI%20Powered-blue?style=for-the-badge&logo=brain&logoColor=white)
 
-### For Candidates (Interviewee Tab)
-- **Resume Upload**: Upload PDF or DOCX resumes with automatic field extraction
-- **Profile Completion**: Chatbot collects missing information (name, email, phone)
-- **AI-Powered Interview**: 6 questions (2 Easy → 2 Medium → 2 Hard) with timers
-- **Dual Input Methods**: Text typing and voice recording for answers
-- **Real-time Feedback**: Visual timers, progress tracking, and auto-submission
-- **Welcome Back Modal**: Resume unfinished interviews after page refresh
+**Revolutionary AI-powered interview platform for modern hiring**
 
-### For Interviewers (Interviewer Tab)
-- **Candidate Dashboard**: View all candidates with scores and status
-- **Detailed Analytics**: Individual candidate performance and AI summaries
-- **Search & Sort**: Filter candidates by name, email, or sort by score/date
-- **Real-time Sync**: Live updates between interviewer and interviewee tabs
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-green?style=for-the-badge&logo=netlify&logoColor=white)](https://golden-tiramisu-6c1984.netlify.app)
+[![Backend API](https://img.shields.io/badge/Backend%20API-Render-orange?style=for-the-badge&logo=render&logoColor=white)](https://ai-interview-assistant-ngar.onrender.com)
 
-### Technical Features
-- **AI Integration**: Groq API for question generation and answer scoring
-- **Data Persistence**: SQLite database with full CRUD operations
-- **Real-time Communication**: WebSocket for tab synchronization
-- **Responsive Design**: Works on desktop and mobile devices
-- **Smooth Animations**: Framer Motion for enhanced user experience
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
+[![Flask](https://img.shields.io/badge/Flask-2.3.3-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Groq AI](https://img.shields.io/badge/Groq%20AI-LLM-00A67E?style=flat&logo=openai&logoColor=white)](https://groq.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=flat&logo=sqlite&logoColor=white)](https://sqlite.org/)
 
-## Tech Stack
+</div>
 
-### Frontend
-- **React 18** - UI framework
-- **Framer Motion** - Animations and transitions
+---
+
+## ✨ What is InterviewAI?
+
+InterviewAI is a cutting-edge interview platform that combines artificial intelligence with modern web technologies to deliver a seamless interview experience. Whether you're a candidate looking to showcase your skills or an interviewer seeking efficient candidate evaluation, InterviewAI provides the tools you need.
+
+### 🎯 Key Highlights
+
+- **🤖 AI-Powered Questions**: Dynamic question generation for React/Node.js roles
+- **📊 Real-time Analytics**: Live dashboard with candidate performance insights
+- **🎤 Voice & Text Input**: Flexible answer submission methods
+- **⏱️ Smart Timing**: Adaptive time limits based on question difficulty
+- **📱 Responsive Design**: Works perfectly on desktop and mobile
+- **🔄 Real-time Sync**: Live updates between interviewer and candidate views
+
+---
+
+## 🚀 Live Demo
+
+### 🌐 **Frontend**: [Visit Live Demo](https://golden-tiramisu-6c1984.netlify.app)
+### 🔧 **Backend API**: [API Documentation](https://ai-interview-assistant-ngar.onrender.com)
+
+---
+
+## 🎨 Features
+
+### 👤 **For Candidates**
+- 📄 **Smart Resume Upload** - PDF/DOCX with automatic field extraction
+- 🧠 **AI-Generated Questions** - 6 questions (2 Easy → 2 Medium → 2 Hard)
+- 🎤 **Dual Input Methods** - Text typing and voice recording
+- ⏰ **Visual Timers** - Real-time countdown with auto-submission
+- 🔄 **Resume Capability** - Continue unfinished interviews
+
+### 👥 **For Interviewers**
+- 📊 **Candidate Dashboard** - View all candidates with scores and status
+- 🔍 **Advanced Search** - Filter by name, email, score, or date
+- 📈 **Detailed Analytics** - Individual performance and AI summaries
+- 🔄 **Real-time Updates** - Live synchronization between tabs
+- 📋 **Export Options** - Download candidate reports
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+- **React 18** - Modern UI framework
+- **Framer Motion** - Smooth animations
 - **Axios** - HTTP client
-- **Socket.io-client** - Real-time communication
+- **Socket.io** - Real-time communication
 - **React Dropzone** - File upload handling
-- **Lucide React** - Icons
 
-### Backend
+### **Backend**
 - **Flask** - Python web framework
-- **SQLAlchemy** - ORM for database operations
+- **SQLAlchemy** - Database ORM
 - **Flask-SocketIO** - WebSocket support
 - **PyPDF2** - PDF text extraction
-- **python-docx** - DOCX text extraction
-- **Groq** - AI API for questions and scoring
+- **python-docx** - DOCX processing
 
-### Database
+### **AI & Database**
+- **Groq AI** - Question generation and scoring
 - **SQLite** - Local database storage
 
-## Installation
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.8+
 - Node.js 16+
-- npm or yarn
+- Groq API Key
 
-### Backend Setup
-1. Navigate to the backend directory:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Abhiram678/Ai_Interview_Assistant_.git
+cd Ai_Interview_Assistant_
+```
+
+### 2. Backend Setup
 ```bash
 cd backend
-```
-
-2. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
 pip install -r requirements.txt
-```
-
-4. Set up the database:
-```bash
-python -c "from app import app, db; app.app_context().push(); db.create_all()"
-```
-
-5. Start the Flask server:
-```bash
 python app.py
 ```
 
-The backend will run on `http://localhost:5000`
-
-### Frontend Setup
-1. Navigate to the frontend directory:
+### 3. Frontend Setup
 ```bash
 cd frontend
-```
-
-2. Install dependencies:
-```bash
 npm install
-```
-
-3. Start the development server:
-```bash
 npm start
 ```
 
-The frontend will run on `http://localhost:3000`
+### 4. Environment Variables
+```bash
+# Backend
+export GROQ_API_KEY="your-groq-api-key"
 
-## Configuration
-
-### Groq API Setup
-1. Get your API key from [Groq Console](https://console.groq.com/)
-2. Set the API key in the backend:
-```python
-# In backend/services/ai_service.py
-ai_service.set_api_key("your-groq-api-key-here")
+# Frontend
+export REACT_APP_API_URL="http://localhost:5000"
 ```
 
-## Usage
+---
 
-### Starting an Interview
-1. Open the application in your browser
-2. Switch to the "Interviewee" tab
-3. Upload your resume (PDF or DOCX)
-4. Complete any missing profile information
-5. Start the interview and answer 6 questions
-6. View your final score and AI summary
+## 📱 How It Works
 
-### Managing Candidates
-1. Switch to the "Interviewer" tab
-2. View all candidates with their scores
-3. Search or sort candidates as needed
-4. Click on any candidate to view detailed interview results
+### **Interview Flow**
+1. **📄 Upload Resume** - Candidate uploads PDF/DOCX resume
+2. **🤖 AI Processing** - System extracts candidate information
+3. **✅ Confirmation** - Review and edit extracted details
+4. **🎯 Interview Start** - AI generates first question
+5. **⏱️ Timed Responses** - Answer with text or voice input
+6. **📊 Real-time Scoring** - AI evaluates each answer
+7. **📈 Final Report** - Comprehensive performance summary
 
-## Project Structure
+### **Dashboard Features**
+- **📊 Candidate Overview** - All candidates with scores
+- **🔍 Advanced Filtering** - Search and sort capabilities
+- **📋 Detailed Views** - Individual candidate performance
+- **🔄 Live Updates** - Real-time synchronization
 
-```
-ai_assistant_2/
-├── backend/
-│   ├── app.py                 # Main Flask application
-│   ├── models/                # Database models
-│   │   ├── database.py
-│   │   ├── candidate.py
-│   │   ├── interview.py
-│   │   ├── question.py
-│   │   └── answer.py
-│   ├── services/              # Business logic
-│   │   ├── resume_service.py
-│   │   ├── ai_service.py
-│   │   └── interview_service.py
-│   └── requirements.txt
-├── frontend/
-│   ├── src/
-│   │   ├── components/        # React components
-│   │   ├── pages/            # Main pages
-│   │   ├── context/          # State management
-│   │   └── App.js
-│   └── package.json
-└── README.md
-```
+---
 
-## API Endpoints
+## 🎯 API Endpoints
 
-### Resume Processing
-- `POST /api/upload-resume` - Upload and extract resume data
-- `GET /api/extract-fields` - Get extracted fields from resume
-
-### Interview Management
-- `POST /api/start-interview` - Start new interview
+### **Resume & Interview**
+- `POST /api/upload-resume` - Upload and process resume
+- `POST /api/start-interview` - Begin new interview
 - `POST /api/submit-answer` - Submit answer and get next question
-- `GET /api/check-unfinished-interview` - Check for unfinished interviews
-- `POST /api/resume-interview` - Resume unfinished interview
+- `GET /api/check-unfinished-interview` - Check for incomplete interviews
 
-### Candidate Management
+### **Candidate Management**
 - `GET /api/candidates` - Get all candidates
 - `GET /api/candidate/<id>` - Get candidate details
+- `POST /api/resume-interview` - Resume incomplete interview
 
-## Features in Detail
+---
 
-### Resume Processing
-- Supports PDF and DOCX formats
-- Extracts name, email, and phone number
-- Validates file size and format
-- Handles missing fields gracefully
+## 🎨 Screenshots
 
-### AI Question Generation
-- Context-aware questions for React/Node.js roles
-- Difficulty-based question selection
-- Dynamic scoring based on answer quality
-- Comprehensive performance summaries
+<div align="center">
 
-### Real-time Features
-- WebSocket communication between tabs
-- Live progress updates
-- Synchronized candidate data
-- Instant score updates
+### **Home Page**
+![Home Page](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=Modern+Home+Page+with+Features)
 
-### Data Persistence
-- SQLite database for local storage
-- Automatic data recovery on app restart
-- Interview state preservation
-- Candidate history tracking
+### **Interview Interface**
+![Interview](https://via.placeholder.com/800x400/10B981/FFFFFF?text=AI+Powered+Interview+Interface)
 
-## Contributing
+### **Dashboard**
+![Dashboard](https://via.placeholder.com/800x400/F59E0B/FFFFFF?text=Real-time+Candidate+Dashboard)
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+</div>
 
-## License
+---
 
-This project is licensed under the MIT License.
+## 🔧 Configuration
 
-## Support
+### **Groq AI Setup**
+1. Get API key from [Groq Console](https://console.groq.com/)
+2. Set environment variable: `GROQ_API_KEY=your-key-here`
+3. AI will generate questions and score answers automatically
 
-For support or questions, please open an issue in the GitHub repository.
+### **Deployment**
+- **Frontend**: Deploy to Netlify, Vercel, or any static host
+- **Backend**: Deploy to Render, Railway, or any Python host
+- **Database**: SQLite (included) or upgrade to PostgreSQL
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- **Groq AI** for powerful language model capabilities
+- **React Team** for the amazing frontend framework
+- **Flask Team** for the lightweight Python web framework
+- **Open Source Community** for the incredible tools and libraries
+
+---
+
+## 📞 Support
+
+- **Issues**: [GitHub Issues](https://github.com/Abhiram678/Ai_Interview_Assistant_/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Abhiram678/Ai_Interview_Assistant_/discussions)
+- **Email**: [Contact Support](mailto:support@interviewai.com)
+
+---
+
+<div align="center">
+
+**Made with ❤️ by [Abhiram](https://github.com/Abhiram678)**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=social&logo=github)](https://github.com/Abhiram678)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin)](https://linkedin.com/in/abhiram)
+
+**⭐ Star this repository if you found it helpful!**
+
+</div>
