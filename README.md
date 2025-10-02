@@ -35,8 +35,8 @@ InterviewAI is a cutting-edge interview platform that combines artificial intell
 
 ## 🚀 Live Demo
 
-### 🌐 **Frontend**: [Visit Live Demo](https://golden-tiramisu-6c1984.netlify.app)
-### 🔧 **Backend API**: [API Documentation](https://ai-interview-ij7y.onrender.com)
+### 🌐 **Frontend**: [Visit Live Demo](https://ai-interview-ij7y.onrender.com/)
+
 
 ---
 
