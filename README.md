@@ -7,7 +7,7 @@
 **Revolutionary AI-powered interview platform for modern hiring**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-green?style=for-the-badge&logo=netlify&logoColor=white)](https://golden-tiramisu-6c1984.netlify.app)
-[![Backend API](https://img.shields.io/badge/Backend%20API-Render-orange?style=for-the-badge&logo=render&logoColor=white)](https://ai-interview-assistant-ngar.onrender.com)
+[![Backend API](https://img.shields.io/badge/Backend%20API-Render-orange?style=for-the-badge&logo=render&logoColor=white)](https://ai-interview-ij7y.onrender.com)
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.3.3-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
@@ -36,7 +36,7 @@ InterviewAI is a cutting-edge interview platform that combines artificial intell
 ## 🚀 Live Demo
 
 ### 🌐 **Frontend**: [Visit Live Demo](https://golden-tiramisu-6c1984.netlify.app)
-### 🔧 **Backend API**: [API Documentation](https://ai-interview-assistant-ngar.onrender.com)
+### 🔧 **Backend API**: [API Documentation](https://ai-interview-ij7y.onrender.com)
 
 ---
 
@@ -152,22 +152,6 @@ export REACT_APP_API_URL="http://localhost:5000"
 
 ---
 
-## 🎨 Screenshots
-
-<div align="center">
-
-### **Home Page**
-![Home Page](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=Modern+Home+Page+with+Features)
-
-### **Interview Interface**
-![Interview](https://via.placeholder.com/800x400/10B981/FFFFFF?text=AI+Powered+Interview+Interface)
-
-### **Dashboard**
-![Dashboard](https://via.placeholder.com/800x400/F59E0B/FFFFFF?text=Real-time+Candidate+Dashboard)
-
-</div>
-
----
 
 ## 🔧 Configuration
 
